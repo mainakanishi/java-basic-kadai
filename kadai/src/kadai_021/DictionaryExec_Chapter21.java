@@ -10,9 +10,7 @@ public class DictionaryExec_Chapter21 {
 		String[] array = {"apple", "banana", "grape", "orange"};
 		
 		// 辞書を調べる
-		for(int i = 0; i < array.length; i++) {
-			dictionary.lookUpInDictionary(array[i]);
-		}
+		dictionary.lookUpInDictionary(array);
 	}
 
 }

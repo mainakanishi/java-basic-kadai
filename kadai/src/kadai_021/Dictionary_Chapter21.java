@@ -17,12 +17,14 @@ public class Dictionary_Chapter21 {
 		dic.put("cherry","さくらんぼ");
 	}
 	
-	public void lookUpInDictionary(String word) {
-		if(this.dic.get(word) != null) {
-			System.out.println(word + "の意味は" + this.dic.get(word));
-		}
-		else {
-			System.out.println(word + "は辞書に存在しません");
+	public void lookUpInDictionary(String[] words) {
+		for(int i = 0; i < words.length; i++) {
+			if(this.dic.get(words[i]) != null) {
+				System.out.println(words[i] + "の意味は" + this.dic.get(words[i]));
+			}
+			else {
+				System.out.println(words[i] + "は辞書に存在しません");
+			}
 		}
 	}
 
